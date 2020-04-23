@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/loadingAreaTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:lines="25"
+        android:maxLines="25"/>
+
+    <TextView
+        android:id="@+id/urlTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:hint="enter website to upload" />
+
+    <Button
+        android:id="@+id/loadUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Website"
+        android:background="@color/design_default_color_primary_dark"
+        android:textColor="@color/cardview_light_background"
+        android:layout_gravity="bottom"
+        android:onClick="onUpload"/>
+
+
+</LinearLayout>
